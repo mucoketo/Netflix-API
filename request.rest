@@ -1,0 +1,40 @@
+
+GET http://localhost:3000/api/users
+
+###
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Jaime",
+    "surname": "Apellido",
+    "mail": "jaime@gmail.com",
+    "user": "James",
+    "password": "123456",
+    "user_type": "USER",
+    "status": "ON",
+    "entry_date": "2023-05-09 00:00:00",
+    "leaving_date": "2023-05-30 00:00:00"
+}
+
+###
+
+PUT http://localhost:3000/api/users/2
+Content-Type: application/json
+
+{
+    "name": "Leticia",
+    "surname": "Apellido",
+    "mail": "leticia@gmail.com",
+    "user": "LEti54",
+    "password": "123456",
+    "user_type": "USER",
+    "status": "ON",
+    "entry_date": "2023-05-09 00:00:00",
+    "leaving_date": "2023-05-30 00:00:00"
+}
+
+###
+
+DELETE http://localhost:3000/api/users/2
